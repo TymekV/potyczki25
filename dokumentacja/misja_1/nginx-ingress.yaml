@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: szk-nginx-ingress
+  namespace: ogloszenia-krytyczne
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    # Enable SSL redirect if you have cert-manager installed
+    # nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  rules:
+  - host: "ogloszenia-krytyczne.193.187.69.223.sslip.io"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: szk-nginx-service
+            port:
+              number: 80

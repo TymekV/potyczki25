@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index-html-configmap
+  namespace: ogloszenia-krytyczne
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html><head><title>Oficjalne Komunikaty</title></head>
+    <body><h1>Wszystko pod kontrolą. Wróg w odwrocie!</h1></body>
+    </html>
