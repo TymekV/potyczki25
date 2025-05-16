@@ -10,7 +10,7 @@ Configi Kubernetes znajdują się w folderze `misja_1`, a wszystkie uruchomione 
 
 # Misja specjalna
 
-Configi Kubernetes znajdują się w folderze `misja_specjalna`, a wszystkie uruchomione komendy w `deploy.sh`. Strona wraz z sekretnym kodem jest widoczna wewnatrz klustra, a żeby ją podejrzeć wystarczy przekierowac port kubectlem kubectl port-forward svc/nginx-service -n secret-code 8080:80 i użyć przeglądarki pod adresem 'localhost:8080'.
+Configi Kubernetes znajdują się w folderze `misja_specjalna`, a wszystkie uruchomione komendy w `deploy.sh`. Strona wraz z sekretnym kodem jest widoczna wewnatrz klustra, a żeby ją podejrzeć wystarczy przekierowac port kubectlem kubectl port-forward svc/nginx-service -n secret-code 8080:80 i użyć przeglądarki pod adresem 'localhost:8080'. Typ usługi to ClusterIP, co oznacza, że jest ona osiągalna pod adresem DNS w formacie <nazwa-usługi>.<przestrzeń-nazw>.svc.cluster.local. W tym przypadku będzie to nginx-service.secret-code.svc.cluster.local.
 
 # Misja 3
 
