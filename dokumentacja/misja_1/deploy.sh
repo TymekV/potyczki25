@@ -10,6 +10,8 @@ kubectl apply -f nginx-configmap.yaml
 kubectl apply -f nginx-deployment.yaml
 kubectl apply -f nginx-service.yaml
 
+EXTERNAL_IP="193.187.67.100"
+
 # Check if the ingress controller is available
 if kubectl get namespace ingress-nginx &>/dev/null; then
   # Apply the ingress if the controller is available

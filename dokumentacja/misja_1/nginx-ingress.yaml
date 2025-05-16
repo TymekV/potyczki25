@@ -5,11 +5,12 @@ metadata:
   namespace: ogloszenia-krytyczne
   annotations:
     kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/rewrite-target: /
     # Enable SSL redirect if you have cert-manager installed
     # nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   rules:
-  - host: "ogloszenia-krytyczne.193.187.69.223.sslip.io"
+  - host: "ogloszenia-krytyczne.193.187.67.100.nip.io"
     http:
       paths:
       - pathType: Prefix
