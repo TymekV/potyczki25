@@ -14,4 +14,4 @@ Configi Kubernetes znajdują się w folderze `misja_specjalna`, a wszystkie uruc
 
 # Misja 3
 
-Configi Kubernetes znajdują się w folderze `misja_3`, a wszystkie uruchomione komendy w `deploy.sh`.
+Configi Kubernetes znajdują się w folderze `misja_3`, a wszystkie uruchomione komendy w `deploy.sh`. Gra jest dostępna pod adresem http://193.187.67.100.nip.io/
