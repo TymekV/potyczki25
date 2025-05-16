@@ -4,6 +4,8 @@ Potyczki Młodych Adminów 2025
 
 # Dokumentacja znajduje się w folderze dokumentacja
 
+Zespół 30
+
 ## Wstęp
 
 Tegoroczne zadania będą testem nie tylko znajomości Kubernetes i Ranchera, ale też działania pod presją, ze szczególnym uwzględnieniem zagadnień bezpieczeństwa.
