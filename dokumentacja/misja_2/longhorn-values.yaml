@@ -1,0 +1,26 @@
+# Longhorn default values configuration
+defaultSettings:
+  defaultReplicaCount: 1
+  createDefaultDiskLabeledNodes: true
+  defaultDataPath: /var/lib/longhorn/
+  replicaSoftAntiAffinity: true
+  storageOverProvisioningPercentage: 200
+  storageMinimalAvailablePercentage: 10
+  upgradeChecker: true
+  defaultDataLocality: disabled
+  backupstorePollInterval: 300
+  autoSalvage: true
+  concurrentReplicaRebuildPerNodeLimit: 5
+  disableRevisionCounter: false
+  systemManagedComponentsNodeSelector: {}
+  priority-class: ""
+  registrySecret: ""
+  autoCleanupSystemGenerated: true
+  backupTarget: ""
+  backupTargetCredentialSecret: ""
+  allowVolumeCreationWithDegradedAvailability: true
+  autoDeletePodWhenVolumeDetachedUnexpectedly: true
+  disableSchedulingOnCordonedNode: true
+  replicaZoneSoftAntiAffinity: true
+  nodeDownPodDeletionPolicy: do-nothing
+  replicaDiskSoftAntiAffinity: true
