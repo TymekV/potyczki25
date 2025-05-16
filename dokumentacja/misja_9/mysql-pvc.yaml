@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pvc
+  namespace: pdsddi
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi # Możesz dostosować rozmiar
+  # storageClassName: "" # Odkomentuj i podaj, jeśli masz specyficzną klasę storage; inaczej użyje domyślnej

@@ -19,3 +19,7 @@ Configi Kubernetes znajdują się w folderze `misja_3`, a wszystkie uruchomione 
 # Misja 8
 
 Wszustkie komendy znajdują się w `deploy.sh`
+
+# Misja 9
+
+Configi znajdują się w folderze `misja_9`, a wszystkie uruchomione komendy w `deploy.sh`. Strona jest dostępna pod adresem http://pdsddi.193.187.67.100.nip.io/ _albo i nie bo nie dziala_

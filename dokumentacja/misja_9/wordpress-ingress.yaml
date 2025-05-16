@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: wordpress-ingress
+  namespace: pdsddi
+  annotations:
+    # Poniższe adnotacje są typowe dla Nginx Ingress Controller.
+    # Mogą się różnić w zależności od używanego kontrolera Ingress.
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    # Do wdrożenia produkcyjnego rozważ użycie cert-manager do automatycznego zarządzania certyfikatami SSL/TLS
+    # cert-manager.io/cluster-issuer: "letsencrypt-prod" 
+    # nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  rules:
+  - host: "pdsddi.193.187.67.100.nip.io" # WAŻNE: Zastąp xxxx.xxx swoją rzeczywistą domeną lub adresem IP, na którym testujesz
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: wordpress-service
+            port:
+              number: 80
+  # W przypadku korzystania z TLS (HTTPS), odkomentuj i skonfiguruj poniższą sekcję:
+  # tls:
+  # - hosts:
+  #   - pdsddi.xxxx.xxx
+  #   secretName: wordpress-tls-secret # Nazwa sekreta Kubernetes zawierającego certyfikat i klucz prywatny
