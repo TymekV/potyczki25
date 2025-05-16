@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cat-entertainment
+  labels:
+    name: cat-entertainment
+    app: game
